@@ -1,0 +1,26 @@
+mrhyper@pop-os:~$ lspci -v -s 00:02.0
+00:02.0 VGA compatible controller: Intel Corporation UHD Graphics 630 (Mobile) (prog-if 00 [VGA controller])
+	Subsystem: CLEVO/KAPOK Computer UHD Graphics 630 (Mobile)
+	Flags: bus master, fast devsel, latency 0, IRQ 134
+	Memory at b5000000 (64-bit, non-prefetchable) [size=16M]
+	Memory at 90000000 (64-bit, prefetchable) [size=256M]
+	I/O ports at 5000 [size=64]
+	[virtual] Expansion ROM at 000c0000 [disabled] [size=128K]
+	Capabilities: <access denied>
+	Kernel driver in use: i915
+	Kernel modules: i915
+
+mrhyper@pop-os:~$ lspci -v -s 01:00.0
+01:00.0 VGA compatible controller: NVIDIA Corporation Device 1e90 (rev a1) (prog-if 00 [VGA controller])
+	Subsystem: CLEVO/KAPOK Computer Device 95e1
+	Flags: bus master, fast devsel, latency 0, IRQ 159
+	Memory at b3000000 (32-bit, non-prefetchable) [size=16M]
+	Memory at a0000000 (64-bit, prefetchable) [size=256M]
+	Memory at b0000000 (64-bit, prefetchable) [size=32M]
+	I/O ports at 4000 [size=128]
+	[virtual] Expansion ROM at b2000000 [disabled] [size=512K]
+	Capabilities: <access denied>
+	Kernel driver in use: nvidia
+	Kernel modules: nvidiafb, nouveau, nvidia_drm, nvidia
+
+
